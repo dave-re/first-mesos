@@ -1,0 +1,27 @@
+{
+    "id": "helloweb",
+    "instances": 1,
+    "cpus": 0.1,
+    "mem": 128.0,
+    "container": {
+        "type": "DOCKER",
+        "docker": {
+            "image": "mymesos/helloweb:v1",
+            "forcePullImage": true,
+            "network": "BRIDGE",
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 0,
+                    "servicePort": 0
+                }
+            ]
+        }
+    },
+    "healthChecks": [
+        {
+            "protocol": "HTTP",
+            "path": "/"
+        }
+    ]
+}

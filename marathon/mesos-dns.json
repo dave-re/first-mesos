@@ -1,0 +1,31 @@
+{
+  "id": "mesos-dns",
+  "cmd": "./mesos-dns-v0.5.1-linux-amd64 -config=./config.json",
+  "cpus": 0.2,
+  "mem": 256,
+  "instances": 1,
+  "constraints": [
+    [
+      "hostname",
+      "CLUSTER",
+      "10.141.141.10"
+    ]
+  ],
+  "healthChecks": [
+    {
+      "protocol": "HTTP",
+      "path": "/v1/version",
+      "port": 8123
+    }
+  ],
+  "fetch": [
+    {
+      "uri": "https://github.com/mesosphere/mesos-dns/releases/download/v0.5.1/mesos-dns-v0.5.1-linux-amd64",
+      "executable": "true"
+    },
+    {
+      "uri": "https://raw.githubusercontent.com/fpgeek/first-mesos/marathon/mesos-dns/config.json",
+      "executable": "false"
+    }
+  ]
+}
