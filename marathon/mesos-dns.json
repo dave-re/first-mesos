@@ -21,11 +21,11 @@
   "fetch": [
     {
       "uri": "https://github.com/mesosphere/mesos-dns/releases/download/v0.5.1/mesos-dns-v0.5.1-linux-amd64",
-      "executable": "true"
+      "executable": true
     },
     {
-      "uri": "https://raw.githubusercontent.com/fpgeek/first-mesos/marathon/mesos-dns/config.json",
-      "executable": "false"
+      "uri": "https://raw.githubusercontent.com/fpgeek/first-mesos/master/marathon/mesos-dns/config.json",
+      "executable": false
     }
   ]
 }
