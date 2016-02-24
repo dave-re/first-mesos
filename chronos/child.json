@@ -1,0 +1,7 @@
+{
+  "name": "ChildJob", 
+  "command": "echo 'Child Job'",
+  "parents": [
+    "ParentJob"
+  ]
+}

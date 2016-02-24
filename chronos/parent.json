@@ -1,0 +1,6 @@
+{
+  "name": "ParentJob", 
+  "command": "echo 'Parent Job'",
+  "schedule": "R//PT30S",
+  "scheduleTimeZone": "Asia/Seoul"
+}

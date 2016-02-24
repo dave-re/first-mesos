@@ -1,0 +1,8 @@
+{
+  "name": "HelloChronosJob",
+  "command": "echo 'Hello Chronos'",
+  "schedule": "R/2016-02-24T22:00:00+09:00/PT5S",
+  "scheduleTimeZone": "Asia/Seoul",
+  "epsilon": "PT15M",
+  "owner": "chronos@example.com"
+}

@@ -1,0 +1,13 @@
+{
+  "schedule": "R/2016-02-24T22:00:00+0900/PT2M",
+  "scheduleTimeZone": "Asia/Seoul",
+  "name": "DockerJob",
+  "container": {
+    "type": "DOCKER",
+    "image": "ubuntu:14.04",
+    "network": "BRIDGE"
+  },
+  "cpus": "0.1",
+  "mem": "128",
+  "command": "date"
+}
